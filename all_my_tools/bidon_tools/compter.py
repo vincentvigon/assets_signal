@@ -13,9 +13,10 @@ def compte_20():
 PI=3.14
 
 class Compteur:
-    def __init__(nb):
+    def __init__(self,nb):
         self.nb=nb
-    def compte():
+
+    def compte(self):
         res = []
         for i in range(self.nb):
             res.append(i)
