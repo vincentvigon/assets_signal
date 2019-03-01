@@ -1,6 +1,18 @@
-import assets_signal.all_my_tools.tools_with_init.myRandom as mr
+import numpy as np
 
-my_random=mr.MyRandom()
 
+class MyRandom:
+
+    _seed=15
+
+    def set_seed(self,seed):
+        np.random.seed(seed)
+
+    def randint(self,low,high):
+        return np.random.randint(low=low,high=high)
+
+
+
+myRandom=MyRandom()
 
 print("le fichier __init__ du package tools_with_init a été exécuté")
