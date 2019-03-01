@@ -12,3 +12,6 @@ class MyRandom:
 
     def randint(self,low,high):
         return np.random.randint(low=low,high=high)
+
+
+print(" 'myRandom' a été exécuté")
